@@ -10,7 +10,11 @@
     "beforeBuildCommand": "npm run build"
   },
   "app": {
-    "windows": [
+    "windows": [   
+      // 添加如下代码,控制nsis目录下.exe的安装文件的语言，SimpChinese标识简体中文
+      "nsis": {
+        "languages": ["SimpChinese"]
+      },
       {
         "title": "tauri-app",
         "width": 800,
